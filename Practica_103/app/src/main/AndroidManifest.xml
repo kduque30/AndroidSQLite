@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Practica_103">
-        <activity android:name=".MostrarActivity"></activity>
+        <provider
+            android:name=".content.Practica103ContentProvider"
+            android:authorities="banistmo"
+            android:enabled="true"
+            android:exported="true"></provider>
+
+        <activity android:name=".MostrarActivity" />
         <activity android:name=".CapturarActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
