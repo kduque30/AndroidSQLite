@@ -9,36 +9,36 @@
 
     <EditText
         android:id="@+id/id"
+        style="@style/botones"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:hint="ingresa tu Id"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        style="@style/botones"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/nombre"
+        style="@style/botones"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="27dp"
         android:hint="ingresa tu nombre"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id"
-        style="@style/botones"/>
+        app:layout_constraintTop_toBottomOf="@+id/id" />
 
     <EditText
         android:id="@+id/correo"
+        style="@style/botones"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:hint="ingresa tu correo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombre"
-        style="@style/botones"/>
+        app:layout_constraintTop_toBottomOf="@+id/nombre" />
 
 
     <LinearLayout
@@ -52,54 +52,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/correo">
 
-        <Button
-            android:id="@+id/guardar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_margin="5dp"
-            android:background="@android:color/holo_blue_dark"
-            android:onClick="salvarInformacion"
-            android:text="Guardar"
-            tools:layout_editor_absoluteX="265dp"
-            tools:layout_editor_absoluteY="239dp" />
-
-        <Button
-            android:id="@+id/consulta"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_margin="5dp"
-            android:background="@android:color/holo_blue_dark"
-            android:text="Consultar"
-            android:onClick="consultarInformacion"
-            tools:layout_editor_absoluteX="118dp"
-            tools:layout_editor_absoluteY="239dp" />
-
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginBottom="43dp"
         android:gravity="center"
         android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
-
-        <Button
-            android:id="@+id/borrar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_margin="5dp"
-            android:background="@android:color/holo_blue_dark"
-            android:text="Borrar"
-            android:onClick="borrarInformacion"
-            tools:layout_editor_absoluteX="265dp"
-            tools:layout_editor_absoluteY="309dp" />
+        app:layout_constraintStart_toStartOf="parent">
 
         <Button
             android:id="@+id/actualizar"
@@ -108,10 +72,42 @@
             android:layout_columnWeight="1"
             android:layout_margin="5dp"
             android:background="@android:color/holo_blue_dark"
-            android:text="Actualizar"
             android:onClick="actualizarInformacion"
+            android:text="Actualizar"
             tools:layout_editor_absoluteX="112dp"
             tools:layout_editor_absoluteY="309dp" />
+
+        <Button
+            android:id="@+id/consulta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="@android:color/holo_blue_dark"
+            android:onClick="consultarInformacion"
+            android:text="Consultar"
+            tools:layout_editor_absoluteX="118dp"
+            tools:layout_editor_absoluteY="239dp" />
+
+        <Button
+            android:id="@+id/guardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="@android:color/holo_blue_dark"
+            android:onClick="salvarInformacion"
+            android:text="Guardar" />
+
+        <Button
+            android:id="@+id/borrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:background="@android:color/holo_blue_dark"
+            android:onClick="borrarInformacion"
+            android:text="Borrar" />
 
     </LinearLayout>
 

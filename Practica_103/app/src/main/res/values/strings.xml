@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Practica_103</string>
+    <string name="app_name">Testing Sqlite</string>
+    <string name="capturar">Save</string>
+    <string name="ver">Watch</string>
 </resources>

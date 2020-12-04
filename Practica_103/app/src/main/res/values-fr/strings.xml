@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Practice Sqlite</string>
+    <string name="capturar">Guarde</string>
+    <string name="ver">Vere</string>
+</resources>

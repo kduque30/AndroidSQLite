@@ -1,35 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="@drawable/gradiente"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/guardarElemento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_blue_dark"
-        android:text="Guardar"
-        android:drawableTop="@android:drawable/ic_menu_save"
-        android:onClick="guardarElemento"/>
+        android:backgroundTint="@color/banistmoAmarillo"
+        android:onClick="guardarElemento"
+        android:text="@string/capturar" />
 
     <Button
         android:id="@+id/mostrarElemento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ver"
-        android:background="@android:color/holo_blue_dark"
+        android:text="@string/ver"
         android:onClick="visualizarElemento"
-        android:drawableTop="@android:drawable/ic_menu_view" />
-
-
-
-
-
-
-
+        android:backgroundTint="@color/banistmoRojo"
+        />
 </LinearLayout>
